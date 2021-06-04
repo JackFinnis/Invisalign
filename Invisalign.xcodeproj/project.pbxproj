@@ -10,11 +10,8 @@
 		F4652E32266A5AA900EBF81A /* Invisalign WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F4652E31266A5AA900EBF81A /* Invisalign WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F4652E37266A5AB400EBF81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4652E36266A5AB400EBF81A /* Assets.xcassets */; };
 		F4652E3E266A5AB400EBF81A /* Invisalign WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F4652E3D266A5AB400EBF81A /* Invisalign WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F4652E43266A5AB400EBF81A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4652E42266A5AB400EBF81A /* ContentView.swift */; };
+		F4652E43266A5AB400EBF81A /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4652E42266A5AB400EBF81A /* TimerView.swift */; };
 		F4652E45266A5AB400EBF81A /* InvisalignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4652E44266A5AB400EBF81A /* InvisalignApp.swift */; };
-		F4652E47266A5AB400EBF81A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4652E46266A5AB400EBF81A /* ComplicationController.swift */; };
-		F4652E49266A5ABA00EBF81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4652E48266A5ABA00EBF81A /* Assets.xcassets */; };
-		F4652E4C266A5ABA00EBF81A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4652E4B266A5ABA00EBF81A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,11 +62,8 @@
 		F4652E36266A5AB400EBF81A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4652E38266A5AB400EBF81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4652E3D266A5AB400EBF81A /* Invisalign WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Invisalign WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4652E42266A5AB400EBF81A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F4652E42266A5AB400EBF81A /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		F4652E44266A5AB400EBF81A /* InvisalignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvisalignApp.swift; sourceTree = "<group>"; };
-		F4652E46266A5AB400EBF81A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
-		F4652E48266A5ABA00EBF81A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F4652E4B266A5ABA00EBF81A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4652E4D266A5ABA00EBF81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,8 +81,9 @@
 		F4652E26266A5AA800EBF81A = {
 			isa = PBXGroup;
 			children = (
-				F4652E35266A5AA900EBF81A /* Invisalign WatchKit App */,
+				F4652E44266A5AB400EBF81A /* InvisalignApp.swift */,
 				F4652E41266A5AB400EBF81A /* Invisalign WatchKit Extension */,
+				F4652E35266A5AA900EBF81A /* Invisalign WatchKit App */,
 				F4652E2E266A5AA800EBF81A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,22 +110,10 @@
 		F4652E41266A5AB400EBF81A /* Invisalign WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F4652E42266A5AB400EBF81A /* ContentView.swift */,
-				F4652E44266A5AB400EBF81A /* InvisalignApp.swift */,
-				F4652E46266A5AB400EBF81A /* ComplicationController.swift */,
-				F4652E48266A5ABA00EBF81A /* Assets.xcassets */,
+				F4652E42266A5AB400EBF81A /* TimerView.swift */,
 				F4652E4D266A5ABA00EBF81A /* Info.plist */,
-				F4652E4A266A5ABA00EBF81A /* Preview Content */,
 			);
 			path = "Invisalign WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		F4652E4A266A5ABA00EBF81A /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F4652E4B266A5ABA00EBF81A /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,8 +230,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4652E4C266A5ABA00EBF81A /* Preview Assets.xcassets in Resources */,
-				F4652E49266A5ABA00EBF81A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +240,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4652E43266A5AB400EBF81A /* ContentView.swift in Sources */,
+				F4652E43266A5AB400EBF81A /* TimerView.swift in Sources */,
 				F4652E45266A5AB400EBF81A /* InvisalignApp.swift in Sources */,
-				F4652E47266A5AB400EBF81A /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Invisalign WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4CQW4CFFYT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Invisalign WatchKit Extension/Info.plist";
@@ -424,7 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Invisalign WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4CQW4CFFYT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Invisalign WatchKit Extension/Info.plist";
